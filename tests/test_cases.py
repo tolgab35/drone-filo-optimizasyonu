@@ -1,0 +1,1 @@
+# Senaryo 1 ve 2 testleri
