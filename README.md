@@ -101,7 +101,11 @@ IEEE formatında hazırlanmış `rapor.pdf` dosyası proje kök dizinindedir.
 
 ## 👨‍💻 Geliştirenler
 
-- Bilişim Sistemleri Mühendisliği – Kocaeli Üniversitesi
-- Yazılım Geliştirme Laboratuvarı II – 2024–2025 Bahar
+- Tolga Boz – 211307036
+- Tuncay Sekmen – 211307090
+- Hüsnü Tolga Koçer – 221307094
+
+**Kocaeli Üniversitesi – Bilişim Sistemleri Mühendisliği**  
+Yazılım Geliştirme Laboratuvarı II – 2024–2025 Bahar
 
 ---
