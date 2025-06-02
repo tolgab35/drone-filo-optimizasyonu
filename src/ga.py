@@ -7,7 +7,7 @@ from src.graph import euclidean_distance
 
 def calculate_fitness(drone, route, no_fly_zones):
     if not is_valid_route(drone, route, no_fly_zones):
-        return 0  # geçersiz rota
+        return 0
 
     total_distance = 0
     current_pos = drone.start_pos
@@ -16,10 +16,16 @@ def calculate_fitness(drone, route, no_fly_zones):
         total_distance += euclidean_distance(current_pos, delivery.pos)
         current_pos = delivery.pos
 
+    # 🔋 BATARYA KONTROLÜ (tek başına güvenlik için tekrar)
+    estimated_energy = total_distance * 10
+    if estimated_energy > drone.battery:
+        return 0
+
     completed = len(route)
     energy_penalty = total_distance * 0.5
 
     return completed * 10 - energy_penalty
+
 
 
 def generate_random_route(drone, deliveries, no_fly_zones, max_len=5):
